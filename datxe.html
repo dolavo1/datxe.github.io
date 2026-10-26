@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelCar — Dịch Vụ Thuê Xe Du Lịch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        * { font-family: 'Roboto', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+        .pulse-btn { animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4); } 70% { box-shadow: 0 0 0 15px rgba(22, 163, 74, 0); } 100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- ========== HEADER ========== -->
+<header class="gradient-bg text-white">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold flex items-center gap-2">
+            <i class="fas fa-car-side"></i> TravelCar
+        </a>
+        <a href="tel:0909604483" class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-semibold flex items-center gap-2 hover:bg-yellow-300 transition">
+            <i class="fas fa-phone-alt"></i> 0909 604 483
+        </a>
+    </div>
+</header>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="gradient-bg text-white py-16 md:py-24">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold mb-6">🚗 Thuê Xe Du Lịch<br>An Toàn & Tiện Lợi</h1>
+        <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Đa dạng loại xe 4 chỗ, 7 chỗ, 16–29 chỗ. Tài xế nhiệt tình, giá hợp lý. Gọi ngay để được tư vấn miễn phí!</p>
+        
+        <a href="tel:0909604483" class="inline-block bg-green-500 text-white px-8 py-4 rounded-full text-xl font-bold pulse-btn mb-8">
+            <i class="fas fa-phone-alt mr-2"></i> GỌI NGAY: 0909 604 483
+        </a>
+        
+        <div class="flex flex-wrap justify-center gap-6 text-sm md:text-base">
+            <div class="flex items-center gap-2"><i class="fas fa-check-circle text-yellow-300 text-xl"></i> Xe mới & bảo dưỡng định kỳ</div>
+            <div class="flex items-center gap-2"><i class="fas fa-check-circle text-yellow-300 text-xl"></i> Tài xế kinh nghiệm</div>
+            <div class="flex items-center gap-2"><i class="fas fa-check-circle text-yellow-300 text-xl"></i> Giá không ẩn phí</div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== LOẠI XE ========== --><section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold">🚙 Chọn Loại Xe</h2>
+            <p class="text-gray-500 mt-2">Phù hợp mọi nhu cầu chuyến đi của bạn</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Xe 4 chỗ -->
+            <div class="bg-gray-50 rounded-2xl p-6 text-center card-hover">
+                <div class="text-5xl mb-4">🚘</div>
+                <h3 class="text-xl font-bold mb-2">Xe 4 Chỗ</h3>
+                <p class="text-gray-500 text-sm mb-4">Vios, City, Elantra...</p>
+                <p class="text-blue-600 font-bold text-lg mb-4">Từ 450.000đ/ngày</p>
+                <a href="tel:0909604483" class="inline-block w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Đặt Ngay</a>
+            </div>
+            
+            <!-- Xe 7 chỗ -->
+            <div class="bg-gray-50 rounded-2xl p-6 text-center card-hover border-2 border-yellow-400">
+                <div class="text-5xl mb-4">🚐</div>
+                <h3 class="text-xl font-bold mb-2">Xe 7 Chỗ</h3>
+                <p class="text-gray-500 text-sm mb-4">Innova, Xpander, Fortuner...</p>
+                <p class="text-blue-600 font-bold text-lg mb-4">Từ 700.000đ/ngày</p>
+                <a href="tel:0909604483" class="inline-block w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Đặt Ngay</a>
+            </div>
+            
+            <!-- Xe 16-29 chỗ -->
+            <div class="bg-gray-50 rounded-2xl p-6 text-center card-hover">
+                <div class="text-5xl mb-4">🚌</div>
+                <h3 class="text-xl font-bold mb-2">Xe 16–29 Chỗ</h3>
+                <p class="text-gray-500 text-sm mb-4">Solati, Universe...</p>
+                <p class="text-blue-600 font-bold text-lg mb-4">Từ 1.300.000đ/ngày</p>
+                <a href="tel:0909604483" class="inline-block w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Đặt Ngay</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== DỊCH VỤ ========== -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold">✅ Dịch Vụ Của Chúng Tôi</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow card-hover">
+                <i class="fas fa-route text-3xl text-blue-600 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Thuê Xe Theo Chuyến</h4>
+                <p class="text-gray-600">Du lịch, tham quan, công tác theo lộ trình bạn chọn. Tự do thời gian!</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow card-hover">
+                <i class="fas fa-calendar-alt text-3xl text-blue-600 mb-4"></i><h4 class="text-xl font-bold mb-2">Thuê Xe Theo Ngày</h4>
+                <p class="text-gray-600">Thuê dài ngày cho công việc hoặc du lịch. Giá ưu đãi khi thuê nhiều ngày!</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow card-hover">
+                <i class="fas fa-plane-arrival text-3xl text-blue-600 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Đưa Đón Sân Bay</h4>
+                <p class="text-gray-600">Đón & trả sân bay đúng giờ, tài xế đợi bạn tại cổng đến.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow card-hover">
+                <i class="fas fa-building text-3xl text-blue-600 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Hợp Đồng Công Ty</h4>
+                <p class="text-gray-600">Dịch vụ thuê xe dài hạn cho doanh nghiệp, xuất hóa đơn đầy đủ.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== LIÊN HỆ ========== -->
+<section class="py-16 gradient-bg text-white">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">📞 Liên Hệ Đặt Xe Ngay</h2>
+        <p class="text-xl text-blue-100 mb-8">Hotline / Zalo: <strong class="text-yellow-300 text-2xl">0909 604 483</strong></p>
+        
+        <div class="space-y-4 text-lg max-w-lg mx-auto">
+            <p><i class="fas fa-map-marker-alt mr-3 text-yellow-300"></i> TP. Hồ Chí Minh & Toàn Quốc</p>
+            <p><i class="fas fa-clock mr-3 text-yellow-300"></i> Phục vụ 24/7 — Luôn sẵn sàng cho chuyến đi của bạn</p>
+        </div>
+        
+        <div class="mt-10 space-y-4">
+            <a href="tel:0909604483" class="inline-block bg-green-500 text-white px-10 py-4 rounded-full text-xl font-bold hover:bg-green-600 transition">
+                <i class="fas fa-phone-alt mr-2"></i> GỌI NGAY: 0909 604 483
+            </a>
+            <br>
+            <a href="https://zalo.me/0909604483" target="_blank" class="inline-block bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition">
+                <i class="fab fa-zalo mr-2"></i> Nhắn tin Zalo
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="bg-gray-900 text-gray-400 py-8 text-center">
+    <p class="text-xl font-bold text-white mb-2">🚗 TravelCar — Dịch Vụ Thuê Xe Du Lịch</p>
+    <p class="text-lg mb-4">Hotline / Zalo: <a href="tel:0909604483" class="text-yellow-400 font-bold">0909 604 483</a></p>
+    <p>Phục vụ tận tâm — An tâm trên mọi hành trình ✨</p>
+    <p class="mt-4 text-sm">© 2026 TravelCar. All rights reserved.</p>
+</footer>
+
+<!-- ========== NÚT GỌI ĐỊNH VỊ Ở ĐÁY MÀN HÌNH DI ĐỘNG ========== --><a href="tel:0909604483" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-green-500 text-white px-8 py-3 rounded-full text-lg font-bold shadow-lg z-50 md:hidden pulse-btn">
+    <i class="fas fa-phone-alt mr-2"></i> Gọi: 0909 604 483
+</a>
+
+</body>
+</html>
